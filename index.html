@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Css personalizado -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>PlatziConf Hawaii</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navar">
+    <!-- Header -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/platzi-logo.png" alt="Platzi logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar" data-bs-offset="57">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link active" aria-current="page" href="#main">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#speakers">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#convierte-en-orador">Conviertete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar ticket</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <section id="main">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/hawaii.jpg" class="d-block w-100" alt="Hawaii">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/hawaii2.jpg" class="d-block w-100" alt="Hawaii2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/hawaii3.jpeg" class="d-block w-100" alt="Hawaii3">
+          </div>
+          <div class="overley">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-6 text-center text-md-end">
+                        <h1>Platzi conf Hawaii</h1>
+                        <p class="d-none d-md-block">
+                            Platzi conf llega por primera vez a Hawaii. Un evento para compartir con nuestra 
+                            comunidad el conocimiento y experiencia de los expertos están creando el futuro de internet.
+                            Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platazi y a los oradores de primer nivel
+                            que tenemos para ti. ¡Te esperamos!
+                        </p>
+                        <a href="#convierte-en-orador" class="btn btn-outline-light">Quiero ser orador</a>
+                        <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar ticket</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- /Main -->
+    <!-- Cards -->
+    <section id="speakers" class="mt-4">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col text-center text-uppercase">
+                    <small>Conoce a los</small>
+                    <h2>Oradores</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/hawaii.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Hawaii 1</h5>
+                            <div class="badges mb-2">
+                                <span class="badge rounded-pill text-bg-warning">JavaScript</span>
+                            </div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget dictum eros. 
+                                Praesent sagittis finibus neque, ac dignissim lectus auctor ut. Quisque sed tellus tempor, molestie eros in, consectetur velit. 
+                                Donec sollicitudin sem diam, sed hendrerit enim semper a. Praesent sit amet tempus magna. Donec ligula quam, mattis sed lacus fringilla, ullamcorper lobortis diam. Vestibulum at lacus ut dolor laoreet bibendum. 
+                                Donec at est sit amet felis sodales luctus sit amet et enim. Praesent mollis sagittis eleifend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/hawaii2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Hawaii 2</h5>
+                            <div class="badges mb-2">
+                                <span class="badge rounded-pill text-bg-danger">Java</span>
+                            </div>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Phasellus ullamcorper enim orci, vel vehicula quam mollis eu. 
+                            Morbi sagittis tristique accumsan. Vivamus lacus nulla, malesuada quis lectus et, faucibus mattis massa. 
+                            Vestibulum ligula elit, aliquam eu dolor nec, cursus pulvinar purus. Cras lorem arcu, maximus nec aliquam sed, commodo non lacus. 
+                            Curabitur rutrum varius nibh, eu pharetra metus. Nam et ipsum quam. Etiam malesuada neque ipsum, nec semper mi consectetur nec. Donec blandit cursus tortor, et hendrerit lorem tincidunt sed. 
+                            Nulla placerat nibh risus, sed placerat libero porttitor ac. Quisque sed mauris dui. Mauris sit amet tempor turpis. Integer nec lectus nibh. Curabitur euismod, risus at placerat ornare, ante arcu euismod augue, condimentum facilisis purus mauris tempus sem. 
+                            Etiam congue malesuada est, et vehicula sem egestas vel.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/hawaii3.jpeg" class="card-img-top" alt="...">
+                            <h5 class="card-title mb-0">Hawaii 3</h5>
+                                <div class="badges mb-2">
+                                    <span class="badge rounded-pill text-bg-success">Python</span>
+                                </div>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis at magna ac feugiat. Nullam in augue a metus dapibus molestie. 
+                            Pellentesque non ante rhoncus, vestibulum ante in, tincidunt est. Nulla pellentesque egestas dolor, et vehicula risus euismod id. Quisque at rhoncus nunc. 
+                            Ut aliquam sed sapien at auctor. Maecenas ornare, risus a varius pharetra, neque nunc porttitor sem, eget fermentum libero quam sit amet risus.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/honolulu.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Honolu</h5>
+                                <div class="badges mb-2">
+                                    <span class="badge rounded-pill text-bg-info">C++</span>
+                                </div>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis at magna ac feugiat. Nullam in augue a metus dapibus molestie. 
+                            Pellentesque non ante rhoncus, vestibulum ante in, tincidunt est. Nulla pellentesque egestas dolor, et vehicula risus euismod id. Quisque at rhoncus nunc. 
+                            Ut aliquam sed sapien at auctor. Maecenas ornare, risus a varius pharetra, neque nunc porttitor sem, eget fermentum libero quam sit amet risus.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Cards -->
+
+    <!-- Fecha y lugar-->
+    <section id="place-time" style="background-color: #343a40; color: white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-12 col-lg-6" >
+                    <img src="assets/honolulu.jpg" alt="Honolulu" style="max-width: 100%;">
+                </div>
+                <div class="col col col-lg pt-2 text-center text-md-start pt-4 pb-4">
+                    <h2>Honolulu - Octubre 2025</h2>
+                    <p>
+                        Honolulu o Honolulú es la capital y localidad más grande del estado de Hawái, en los Estados Unidos. 
+                        Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, 
+                        la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).
+                    </p>
+                    <a href="https://es.wikipedia.org/wiki/Honolulu" class="btn btn-outline-light">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Fecha y lugar -->
+    <!--Convierte en Orador-->
+    <section id="convierte-en-orador" class="pt-2 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col text-uppercase text-center">
+                    <small>Convierte en un</small>
+                    <h2>Orador</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    Anótate como orador para dar una charla
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                            </div>
+                            <div class="form-group col col-md-6">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="row form-group pt-2">
+                            <div class="col">
+                                <textarea name="text" class="form-control form-control-lg" placeholder="¿De qué quieres hablar?"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-grid pt-2">
+                                <button class="btn btn-platzi">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Convierte en Orador-->
+    <!-- Footer -->
+    <footer id="footer" class="pb-3 pt-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-md col-lg">
+                    <a href="#">Preguntas frecuentes</a>
+                </div>
+                <div class="col-12 col-md col-lg">
+                    <a href="#">Contactanos</a>
+                </div>
+                <div class="col-12 col-md col-lg">
+                    <a href="#">Tendencias</a>
+                </div>
+                <div class="col-12 col-md col-lg">
+                    <a href="#">Quienes somos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Comprar ticket</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="row">
+                    <div class="form-group col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                </div>
+              </form>
+              <div class="alert alert-warning" role="alert">
+                Recibirás un correo de confirmación si sales seleccionado
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-platzi">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Modal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
